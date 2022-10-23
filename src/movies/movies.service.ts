@@ -23,7 +23,7 @@ import { MoviesUpdate } from './movies-update.dto';
       return this.repo.save(movies);
     }
   
-    listMovies(owner: User): Promise<Movies[]> {
+    public listMovies(owner: User): Promise<Movies[]> {
       return this.repo.find({
         where: { owner: { id: owner.id } },
         order: { createdAt: 'DESC' },
