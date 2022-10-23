@@ -68,26 +68,6 @@ You can copy the example `.env` and edit the values
   cp .env.example .env
 ```
 
-## Running Tests
-
-To run unit tests, run the following command:
-
-```bash
-  npm test
-```
-
-To run e2e tests (the PostgreSQL instance must be available), run the following command:
-
-```bash
-  npm run test:e2e
-```
-
-To see the code coverage
-
-```bash
-  npm run test:cov
-```
-
 ## Tech Stack
 
 **Server:** Typescript, PostgreSQL, Nest.js, TypeORM, Passport
